@@ -1,0 +1,8 @@
+ipython
+numpy
+matplotlib
+polars
+pandas
+scipy
+scikit-learn
+networkx
