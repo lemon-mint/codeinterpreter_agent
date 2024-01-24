@@ -59,6 +59,9 @@ func WriteFileHandler(w http.ResponseWriter, r *http.Request) {
 		res.Error = err.Error()
 	}
 
+	res.Success = true
+	res.Error = ""
+
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	if err := json.NewEncoder(w).Encode(res); err != nil {

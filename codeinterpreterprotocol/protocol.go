@@ -5,12 +5,12 @@ type RunCommandRequest struct {
 }
 
 type RunCommandResponse struct {
-	Success bool   `json:"success,omitempty" description:"Whether the command was successful"`
+	Success bool   `json:"success" description:"Whether the command was successful"`
 	Error   string `json:"error,omitempty" description:"If the command was not successful, the error message"`
 
 	Stdout   string `json:"stdout" description:"The standard output of the command"`
 	Stderr   string `json:"stderr" description:"The standard error of the command"`
-	ExitCode int    `json:"exitCode,omitempty" description:"The exit code of the command"`
+	ExitCode int    `json:"exitCode" description:"The exit code of the command"`
 }
 
 type WriteFileRequest struct {
